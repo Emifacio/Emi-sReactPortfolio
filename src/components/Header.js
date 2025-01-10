@@ -1,6 +1,6 @@
 import React, { useEffect, useRef, useState } from "react";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { faEnvelope } from "@fortawesome/free-solid-svg-icons";
+import { faEnvelope, faT, faX } from "@fortawesome/free-solid-svg-icons";
 import {
   faGithub,
   faLinkedin,
@@ -12,23 +12,23 @@ import { Box, HStack } from "@chakra-ui/react";
 const socials = [
   {
     icon: faEnvelope,
-    url: "mailto: hello@example.com",
+    url: "mailto: facio.gabrielemiliano@gmail.com",
   },
   {
     icon: faGithub,
-    url: "https://github.com",
+    url: "https://github.com/emifacio",
   },
   {
     icon: faLinkedin,
-    url: "https://www.linkedin.com",
+    url: "https://www.linkedin.com/in/emiliano-facio",
   },
   {
-    icon: faMedium,
-    url: "https://medium.com",
+    icon: faX,
+    url: "https://x.com/EmilianoFacio77",
   },
   {
     icon: faStackOverflow,
-    url: "https://stackoverflow.com",
+    url: "https://stackoverflow.com/users/24658969/gabriel-emiliano-facio",
   },
 ];
 
@@ -94,7 +94,7 @@ const Header = () => {
             py={4}
             justifyContent="space-between"
             alignItems="center"
-            spacing={4}
+            spacing={6}
           >
             <nav>
               {socials.map((social, index) => (
